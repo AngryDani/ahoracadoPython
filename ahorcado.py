@@ -1,3 +1,6 @@
+import random
+
+
 IMAGES = ['''
   +---+
   |   |
@@ -50,7 +53,7 @@ IMAGES = ['''
 =========''']
 
 
-WORD= [
+WORDS= [
     "gato",
     "pais",
     "democracia",
@@ -59,8 +62,12 @@ WORD= [
     "portaaviones"
 ]
 
+def random_word():
+  idx= random.randint(0, len(WORDS)-1)
+
+
 def run():
-    pass
+    word= random_word()
 
 
 
